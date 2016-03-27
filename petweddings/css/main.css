@@ -220,8 +220,8 @@ figure>img{
 	
 }
 
-@media screen and (min-width:100px) and (max-width: 510px){
-	
+/* @media screen and (min-width:100px) and (max-width: 510px){ */
+@media only screen and (max-device-width: 480px),  screen and (min-width:100px) and (max-width: 510px){
 	
 	nav li{
 		float:none; 
