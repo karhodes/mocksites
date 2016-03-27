@@ -1,0 +1,269 @@
+/* ================================================
+ 	Author: Kelly Rhodes 
+	Class: DWS2
+	Purpose: Week 1 Assignment 
+	Site: www.petweddings.com
+	Date: January 8, 2015
+
+/* ================================================
+					Color Swatches  
+===================================================
+	Gray 		#5c4b51;
+	Aqua 		#8cbeb2;
+	Cream 		#f2ebbf;
+	Coral		#f06060;
+================================================== */
+
+
+/* --------------------------$Generic Page Elements 
+--------------------------------------------------- */
+body{
+	font: 62.5%/1.5 "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;	
+	background: #8cbeb2;
+	color: #474747;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	padding: 5px 0px;
+}
+
+h1{
+	font-size: 3.2em; /* 32px/10px */
+	padding-top: 10px;
+	text-align: center;
+}
+
+h2{
+	font-size: 2.4em; /* 24px/10px */
+	color: #f06060;
+	margin:0px;
+}
+
+h3{
+	font-size: 2.2em; /* 22px/10px */
+	font-style: italic;
+	margin: 10px 0;
+}
+
+p,ul{
+	font-size: 1.4em; /* 14px/10px */
+}
+
+
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	display:block;
+}
+
+figcaption {
+	text-align: center;
+}
+
+/* --------------------------$Nav Content Elements 
+--------------------------------------------------- */
+nav{
+	background-color: #5c4b51;
+	padding: 10px 1.6%;
+}
+
+nav ul{
+	list-style-type: none;
+	padding:0;
+	margin: 10px auto;
+	width: 100%;  /* 864px (from #inner) */
+	overflow:hidden;
+}
+
+nav li{
+	float: left;
+	width: 25%;  /* 216px/864px */
+	text-transform: capitalize;
+	text-align: center;
+}
+
+nav a{
+	line-height:30px;
+	display:block;
+	color: #f06060;;
+}
+
+nav a:hover {
+	background-color:#f06060;
+	color: #5c4b51;;
+}
+
+
+
+/* --------------------------$Main Content Elements 
+--------------------------------------------------- */
+#header{
+	background-color: #5c4b51;
+	padding: 10px 1.04166667%;/* 10px/960px for left & right padding */
+}
+
+
+#wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px #5c4b51;
+}
+
+
+#inner, #intro{
+	width: 90%; /* 864px/960 px */
+	margin: 0px auto;
+	padding: 5px 0;
+}
+
+#intro, #intro>h2{
+	margin-bottom: 15px;
+}
+
+#intro>h2{
+	text-align: center;
+	
+}
+
+#intro>img {
+	margin: 0px auto;
+	
+}
+
+#intro>img:nth-of-type(2){
+	border: 5px solid #f06060;
+}
+
+#section1, #section2{
+	margin:10px auto;
+}
+
+#section2, #section3, #queens, #section4, #footer{
+	clear:both;
+}
+
+[class^="left"] {
+	width: 31.25%; /* 300px/960px */
+	float:left;
+	margin: 15px 2.29166667%; /* 22px/960px */
+}
+
+.right_content {
+	float:right;
+	width: 60% /* remainder from left_content */
+}
+
+ul + p {
+	font-style: italic;
+}
+
+#toms>figure, #queens>figure {
+	width: 20%; /* creating 4 columns; each column + gutter needs to be less than 25% */
+	margin: 0 1.5625%; /* 15px/960px */
+	float:left;
+}
+
+figure>img{
+	border: 5px solid #f06060;
+	border-radius: 150px;
+}
+
+#section4{
+	padding: 20px 0 80px;
+}
+
+#section4>a{
+	width:30%; /* creating 3 columns; each column + gutter needs to be less than 33.33% */
+	float:left;
+	margin-right: 3%;
+}
+
+#footer{
+	background: #5c4b51;
+	color: #f2ebbf;
+	text-align: center;
+
+}
+
+#footer>h4{
+	margin: 0px auto;
+}
+
+/* --------------------------$Media Queries 
+--------------------------------------------------- */
+
+
+@media screen and (min-width: 400px) and (max-width: 850px){
+	
+	#toms>figure, #queens>figure {
+		width: 43%;
+		margin: 0 3% 15px;
+		float:left;
+		display: block;
+		text-align: center;
+	}
+
+	#section4>a{
+		width:43%;
+		float: none;
+		margin: 10px auto;
+		display: block;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (min-width:100px) and (max-width: 510px){
+	
+	
+	nav li{
+		float:none; 
+		width:100%;
+	}
+		
+	nav a{
+		height:50px;
+		line-height: 50px;
+	}	
+	
+	nav ul{
+		width:100%;
+	}
+		
+	.left_content, .right_content{
+		float:none;
+		width:100%;
+		margin:0 auto;
+	}
+	
+	
+	#toms>figure, #queens>figure{
+		display:block;
+		width:90%;
+		float: none;
+		margin: 10px auto;
+		text-align: center;
+	}
+	
+	.left_content>img, figure>img, #section4>img{
+		margin:0px auto;	
+	}
+	
+	#section4>a{
+		width:65%;
+		float: none;
+		margin: 25px auto;
+		display: block;
+		text-align: center;
+	}
+
+
+}
+
