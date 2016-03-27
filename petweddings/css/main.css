@@ -99,8 +99,6 @@ nav a:hover {
 	color: #5c4b51;;
 }
 
-
-
 /* --------------------------$Main Content Elements 
 --------------------------------------------------- */
 #header{
@@ -108,14 +106,12 @@ nav a:hover {
 	padding: 10px 1.04166667%;/* 10px/960px for left & right padding */
 }
 
-
 #wrapper{
 	max-width: 960px;
 	margin: 0 auto;
 	background-color: #fff;
 	box-shadow: 0 0 10px #5c4b51;
 }
-
 
 #inner, #intro{
 	width: 90%; /* 864px/960 px */
@@ -128,13 +124,11 @@ nav a:hover {
 }
 
 #intro>h2{
-	text-align: center;
-	
+	text-align: center;	
 }
 
 #intro>img {
-	margin: 0px auto;
-	
+	margin: 0px auto;	
 }
 
 #intro>img:nth-of-type(2){
@@ -220,7 +214,6 @@ figure>img{
 	
 }
 
-/* @media screen and (min-width:100px) and (max-width: 510px){ */
 @media only screen and (max-device-width: 480px),  screen and (min-width:100px) and (max-width: 510px){
 	
 	nav li{
@@ -243,7 +236,6 @@ figure>img{
 		margin:0 auto;
 	}
 	
-	
 	#toms>figure, #queens>figure{
 		display:block;
 		width:90%;
@@ -264,6 +256,4 @@ figure>img{
 		text-align: center;
 	}
 
-
 }
-
