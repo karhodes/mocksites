@@ -1,0 +1,311 @@
+/* ================================================
+ 	Author: Kelly Rhodes 
+	Class: DWS2
+	Purpose: Week 2 Assignment 
+	Site: www.123MainStreet.com
+	Date: January 15, 2015
+
+/* ================================================
+					Color Swatches  
+===================================================
+	(Adobe Kuler Friends and Foes)
+	Light Yellow:	#ffffa6;
+	Lime:			#bdf271;
+	Teal:			#29d9c2;
+	Dk Teal:		#01a2a6;
+	Navy:			#2f2933;
+================================================== */
+
+
+/* --------------------------$Generic Page Elements 
+--------------------------------------------------- */
+body{
+	background-color: #29d9c2; /* Teal */
+	background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
+}
+
+.container{
+	background-color: #ffffa6; /* Light Yellow */
+}
+
+img{
+	max-width: 100%;
+	display:block;
+}
+
+h1,h2,h3,p{
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	color: #ffffa6; /* Light Yellow */
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+}
+
+/* --------------------------$Jumbotron 
+--------------------------------------------------- */
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 0px;
+    margin-right: -15px;
+	margin-left: -15px;
+}
+
+.jumbotron{
+	background-image: url("../images/front.JPG");
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	margin:0;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    color: #ffffa6; /* Light Yellow */
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+    padding-top: 125px;
+}
+
+@media screen and (max-width: 767px){
+	.jumbotron{
+		background-image: url("../images/front-med.JPG");
+		height: 709px;
+	}
+
+	.jumbotron h1, .jumbotron .h1, h2 {
+		margin-left: 15px;
+	}
+
+	.jumbotron .row{
+		position: relative;
+		bottom: -50px;
+	}
+}
+
+
+/* --------------------------$Nav Content Elements 
+--------------------------------------------------- */
+/*navbar-nav starts on line 3992 in bootstrap.css */
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #2f2933; /* Navy */
+    background-color: #ffffa6; /* Light Yellow */
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffa6; /* Light Yellow */
+    background-color: #2f2933; /* Navy */
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffa6; /* Light Yellow */
+    background-color: #2f2933; /* Navy */
+}
+
+.dropdown-menu {
+    background-color: #2f2933; /* Navy */
+    border-radius: 0px;
+}
+
+.dropdown-menu > li > a {
+	color: #ffffa6; /* Light Yellow */
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #2f2933; /* Navy */
+    background-color: #ffffa6; /* Light Yellow */
+}
+
+/* Pancake Button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle {
+    background-color: #ffffa6; /* Light Yellow */
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #2f2933; /* Navy */
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2f2933; /* Navy */
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar{
+    background-color:#ffffa6; /* Light Yellow */
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+@media screen and (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: #2f2933; /* Navy */
+		background-color: #ffffa6; /* Light Yellow */
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: #ffffa6; /* Light Yellow */
+		background-color: #2f2933; /* Navy */
+	}
+}
+
+/* --------------------------$Photogrid 
+--------------------------------------------------- */
+#photogrid{
+	padding-top: 1em;
+}
+
+/* thumbnail starts on line 4661 in bootstrap.css */
+.thumbnail {
+  background-color: #01a2a6; /* Dk Teal */
+  border: 1px solid #01a2a6; /* Dk Teal */
+  border-radius: 0px;
+}
+
+
+/* --------------------------$Description and Table 
+--------------------------------------------------- */
+#desc_table h3 {
+	color: #01a2a6; /* Dk Teal */
+	border-bottom: 1px solid #01a2a6; /* Dk Teal */
+}
+
+#desc_table p{
+	color: #2f2933; /*navy*/
+}
+
+/* --------------------------$Table 
+--------------------------------------------------- */
+table{
+	border: 1px solid #2f2933; /*navy*/
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	border-top: 1px solid #2f2933; /*navy*/
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) {
+    color: #ffffa6; /*light yellow*/
+    background-color: #01a2a6; /* Dk Teal */
+    border-color: transparent;
+}
+
+td:first-child{
+	text-align: right;
+	width: 40%;
+}
+
+td:last-child{
+	width: 60%;
+}
+
+/* --------------------------$Contact Form, About Kelly 
+--------------------------------------------------- */
+
+#contact_kelly{
+	background-color:#01a2a6; /*dk teal*/
+	color:#ffffa6; /*light yellow*/
+	padding: 2em 0;
+	background-image:url("../images/half-circle.png");
+	background-repeat:repeat-x;
+	background-position: 0 -1%;
+	border-top: 10px solid #ffffa6; /*light yellow*/
+}
+
+/* form-control starts on line 2356 in bootstrap.css */
+.form-control {
+  color: #2f2933; /*navy*/
+  background-color: #fff;
+  border: 1px solid #29d9c2; /*teal*/
+  border-radius: 0px;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+
+#left_stuff{
+	float:left;
+	width: 30%;
+}
+
+#right_stuff{
+	float:right;
+	width: 70%;
+	padding-left: 1%;
+}
+
+/* --------------------------$Submit Button 
+--------------------------------------------------- */
+/* btn starts on line 2751 in bootstrap.css */
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #ffffa6; /*light yellow*/
+}
+
+.btn-default {
+  color: #ffffa6; /*light yellow*/
+  background-color: #2f2933; /*navy*/
+  border-color: #29d9c2;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #2f2933; /*navy*/
+  background-color: #ffffa6; /*light yellow*/
+  border-color: #29d9c2; /*teal*/
+}
+
+
+/* --------------------------$Footer Elements 
+--------------------------------------------------- */
+
+
+footer{
+	text-align: center;
+	background-color: #2f2933; /*navy*/
+	color:#ffffa6; /*light yellow*/
+	padding: 2em 10%;
+	border-top: 1px solid #29d9c2; /*teal*/
+}
