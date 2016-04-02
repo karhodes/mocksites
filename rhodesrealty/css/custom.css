@@ -50,7 +50,7 @@ h2 {
 }
 
 .jumbotron{
-	background-image: url("../images/front.JPG");
+	background-image: url("../images/front.jpg");
 	/*background-size: cover;*/
 	background-repeat: no-repeat;
 	margin:0;
@@ -64,7 +64,7 @@ h2 {
 
 @media screen and (max-width: 767px){
 	.jumbotron{
-		background-image: url("../images/front-med.JPG");
+		background-image: url("../images/front-med.jpg");
 		height: 709px;
 	}
 
