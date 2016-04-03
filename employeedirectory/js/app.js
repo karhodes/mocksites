@@ -14,7 +14,6 @@ angular.module("myApp",[])
 		$scope.removeItemAt = function(idx){
 			myService.removeItemAt(idx)
 		}
-
 	})
 	
 	.service("myService", function(){
@@ -40,5 +39,3 @@ angular.module("myApp",[])
 		}
 
 	});
-
-
