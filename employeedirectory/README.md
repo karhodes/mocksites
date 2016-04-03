@@ -6,7 +6,7 @@ Full CRUD with angular for a typical employee directory
 **Month:**  April 2015
 
 ## Check out the live version!
-[employeedirectory](http://karhodes.github.io/mocksites/petweddings/)
+[employeedirectory](http://karhodes.github.io/mocksites/employeedirectory/)
 
 ## Colophon
   * AngularJS
