@@ -1,0 +1,20 @@
+body {
+  padding-bottom: 40px;
+  background-image: url("../images/retina_wood.png");
+  margin:0;
+}
+
+
+h1{
+	text-align: center;
+	padding: 75px 0px;
+	color:#cf4fd2;
+	text-shadow: 2px 2px 8px #974eb6;
+	font-family: 'Lobster', cursive;
+	font-size: 3.7em;
+}
+
+img{
+    max-width:100px; /* you can use % */
+    height: auto;
+}
