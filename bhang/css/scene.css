@@ -1,0 +1,112 @@
+/* --------- Styles for the Scene Page ---------- */
+
+/*  Map Info  */
+.spot_detail_container {
+  display: none; 
+}
+
+.spot_detail_container .spot_detail {
+  width: 300px;
+  border: 1px solid #ccc; 
+}
+
+/*  Interactive Map Container */
+.map_container {
+  background-image: url(../img/scene/map/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 700px;
+  width: 760px;
+  position: relative;
+  color: #36362C;
+  margin: 10px auto 40px;
+  border: 3px solid #825534; 
+}
+
+.map_container a.dot {
+  background-image: url(../img/scene/map/dot_red.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 23px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  cursor: pointer; 
+}
+
+.map_container a.dot:hover {
+  background-image: url(../img/scene/map/dot_yellow.png); 
+}
+
+.map_container a.dot.selected {
+  background-image: url(../img/scene/map/dot_green.png); 
+}
+
+.map_container .detail_container {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 240px;
+  height: 260px; 
+}
+
+.map_container .detail_spot {
+  position: absolute;
+  top: 35px;
+  left: 460px;
+  width: 260px;
+  height: 260px; 
+}
+
+.map_container .spot_detail {
+  position: absolute;
+  top: 0px;
+  width: 260px;
+  padding: 10px 12px 0px 12px;
+  background-color: #A8AD80;
+  border: 1px solid #36362C;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; 
+}
+
+.map_container .spot_detail h2 {
+  font-weight: bold; 
+}
+
+.map_container .spot_detail .spot_photo {
+  float: left;
+  margin: 0px 15px 5px 0px;
+  border: 1px solid #E6D4A7;
+  border-radius: 8px;
+  box-shadow: 0px 5px 3px #36362C;
+  -webkit-box-shadow: 0px 5px 3px #36362C;
+  -moz-box-shadow: 0px 5px 3px #36362C;
+  -webkit-border-radius: 8px; 
+}
+
+.map_container .spot_detail .spot_info {
+  width: 240px;
+  float: left; 
+}
+
+.map_container .spot_info h2 {
+  margin: 0px 0px 0px 0px;
+  font-size: 18px;
+  font-weight: bold; 
+}
+
+.map_container .spot_info h3 {
+  margin: 0px 0px 12px 0px;
+  font-size: 12px;
+  text-transform: uppercase; 
+}
+
+.map_container p {
+  margin: 0px 0px 12px 0px; 
+}
+
+.map_container a, a:visited {
+  color: #AA0000;
+  margin: 0px 10px 0px 0px; 
+}

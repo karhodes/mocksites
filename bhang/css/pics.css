@@ -1,0 +1,16 @@
+/* --------- Styles for the Pics Page ---------- */
+
+#photo_gallery {
+  margin-bottom: 20px; 
+}
+
+.photo_gallery_box {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 22.316%;
+  margin: 1.3%;
+  margin-bottom: 10px; }
+  .photo_gallery_box:last-child {
+    margin-right: 0; 
+}

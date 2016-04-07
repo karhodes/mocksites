@@ -1,0 +1,89 @@
+/* --------- Styles for the Team Page ---------- */
+
+#team_page {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#team_page::after {
+    clear: both;
+    content: "";
+    display: table; 
+}
+
+#pic_outer_container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; 
+}
+  
+#pic_outer_container:last-child {
+    margin-right: 0; 
+}
+
+.pic_inner_container {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 17.72593%;
+  position: relative;
+  border: 5px solid #A8AD80; }
+
+.pic_inner_container:last-child {
+  margin-right: 0; 
+}
+
+.profile_photo {
+  z-index: 100;
+  position: absolute;
+  top: 0; 
+}
+
+.action_photo {
+  top: 0; 
+}
+
+.skater_detail_container {
+  display: none; 
+}
+
+.skater_detail_outer_container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: #36362C;
+  margin-left: 25.58941%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+  position: relative;
+  height: 220px;
+  font-family: 'Architects Daughter', cursive;
+  color: #E6D4A7; 
+}
+
+.skater_detail_outer_container:last-child {
+	margin-right: 0; 
+}
+
+.skater_detail_outer_container .skater_detail_container {
+  position: absolute;
+  top: 20px;
+  left: 20px; 
+}
+
+.skater_detail_outer_container h2 {
+  text-align: center; 
+}
+
+.skater_info p {
+  margin: 0; 
+}
+
+.selected_skater {
+  border: 5px solid #36362C; 
+}
